@@ -1,0 +1,6 @@
+Here are the dummy credentials you can use to log in:
+
+Email: developer@example.com
+Password: Password123!
+
+(Note: Since this is using the mock frontend-only setup, any password will actually work as long as the field is not empty!)

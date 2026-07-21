@@ -1,0 +1,6 @@
+{
+  "name": "DevTinder",
+  "description": "A Tinder-like app for developers to connect with each other based on their skills.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
