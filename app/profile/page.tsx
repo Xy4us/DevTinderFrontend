@@ -11,8 +11,6 @@ import { Edit, KeyRound } from "lucide-react";
 export default function ProfilePage() {
   const user = useSelector((state: any) => state.user);
 
-  if (!user) return null;
-
   return (
     <ProtectedRoute>
       <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex flex-col">

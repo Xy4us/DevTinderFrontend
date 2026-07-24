@@ -7,3 +7,5 @@
 - Whenever you are making api call so pass axios => { withCredentials: true }
 - Install redux toolkit (npm i @reduxjs/toolkit react-redux)
 - Install react-redux + @reduxjs/toolkit => configureStore => Provider => createSlice => add reducer to store
+- You should not be able to access other routes without login
+- If the toek is not valid redirect the user to login page

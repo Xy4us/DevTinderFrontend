@@ -21,7 +21,7 @@ export function Navbar() {
       await authApi.logout();
       dispatch(removeUser());
       toast.success("Logout successful!");
-      router.push("/login");
+      router.replace("/login");
     } catch (err) {
       toast.error("Logout failed.");
     }

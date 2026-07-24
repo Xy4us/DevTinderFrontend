@@ -14,8 +14,6 @@ export default function EditProfilePage() {
   const dispatch = useDispatch();
   const router = useRouter();
 
-  if (!user) return null;
-
   const handleSave = async (data: any) => {
     try {
       const res = await profileApi.edit(data);
