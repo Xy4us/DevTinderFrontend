@@ -105,7 +105,9 @@ export default function LoginPage() {
                   className={errors.emailId ? "border-red-500" : ""}
                 />
                 {errors.emailId && (
-                  <p className="text-sm text-red-500">{errors.emailId.message}</p>
+                  <p className="text-sm text-red-500">
+                    {errors.emailId.message}
+                  </p>
                 )}
               </div>
 
@@ -116,7 +118,9 @@ export default function LoginPage() {
                     id="password"
                     type={showPassword ? "text" : "password"}
                     {...register("password")}
-                    className={errors.password ? "border-red-500 pr-10" : "pr-10"}
+                    className={
+                      errors.password ? "border-red-500 pr-10" : "pr-10"
+                    }
                   />
                   <button
                     type="button"

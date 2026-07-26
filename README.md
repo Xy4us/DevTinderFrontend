@@ -8,4 +8,9 @@
 - Install redux toolkit (npm i @reduxjs/toolkit react-redux)
 - Install react-redux + @reduxjs/toolkit => configureStore => Provider => createSlice => add reducer to store
 - You should not be able to access other routes without login
-- If the toek is not valid redirect the user to login page
+- If the token is not valid redirect the user to login page
+- Logout feature
+- Feed feature
+- Profile edit
+- Toast messages
+- connectios page

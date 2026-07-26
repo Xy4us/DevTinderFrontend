@@ -5,6 +5,9 @@ import { useRouter } from "next/navigation";
 import { LogOut, Code, Users, Bell } from "lucide-react";
 import { useSelector, useDispatch } from "react-redux";
 import { removeUser } from "@/utils/userSlice";
+import { removeFeed } from "@/utils/feedSlice";
+import { removeRequests } from "@/utils/requestSlice";
+import { removeConnections } from "@/utils/connectionSlice";
 import { authApi } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import toast from "react-hot-toast";
@@ -12,7 +15,6 @@ import Image from "next/image";
 
 export function Navbar() {
   const user = useSelector((store: any) => store.user);
-  console.log(user);
   const dispatch = useDispatch();
   const router = useRouter();
 
@@ -20,6 +22,9 @@ export function Navbar() {
     try {
       await authApi.logout();
       dispatch(removeUser());
+      dispatch(removeFeed(null));
+      dispatch(removeRequests());
+      dispatch(removeConnections());
       toast.success("Logout successful!");
       router.replace("/login");
     } catch (err) {
