@@ -14,3 +14,10 @@
 - Profile edit
 - Toast messages
 - connectios page
+- Request page and its interested and rejected thingh also done
+- Send and ignored the connection req page as well
+
+
+# Remaining
+ - Signup  page logic 
+ -E2E testing 
