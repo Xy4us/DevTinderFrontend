@@ -16,8 +16,14 @@
 - connectios page
 - Request page and its interested and rejected thingh also done
 - Send and ignored the connection req page as well
+- Signup  page logic 
+- E2E testing 
 
+# Deployment
 
-# Remaining
- - Signup  page logic 
- -E2E testing 
+- SignUp on AWS 
+- Launch an instance 
+- Create a key value pair
+- chmod 400 <secret>.pem
+- connected to the machine using ssh 
+- now we will setup the project onto the machine

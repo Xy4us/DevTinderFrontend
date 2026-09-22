@@ -1,1 +1,1 @@
-export const baseUrl = "http://localhost:7777";
+export const baseUrl = "https://devtinderbackend-production.up.railway.app";
